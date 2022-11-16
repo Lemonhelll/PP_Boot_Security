@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form th:method="POST" th:action="@{/admin/update}" th:object="${user}">
+<form th:method="PUT" th:action="@{/admin/update}" th:object="${user}">
 
     <input type="hidden" th:field="*{id}" id="id"/>
     <label for="username">Enter username: </label>
